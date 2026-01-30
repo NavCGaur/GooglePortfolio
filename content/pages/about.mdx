@@ -1,0 +1,87 @@
+---
+title: "About Me"
+slug: "about"
+description: "My journey as a designer and developer."
+---
+
+<ProfileHero 
+  title="WHO I AM" 
+  subtitle="I'm a freelance designer and developer with a passion for creating digital experiences that are both beautiful and functional. With over a decade of experience in the industry, I've had the privilege of working with clients ranging from startups to established enterprises. My approach is rooted in minimalism and clarity. I believe that great design should be invisible—it should serve the user without drawing attention to itself. Every project I undertake is guided by this principle, ensuring that form always follows function. When I'm not designing or coding, you'll find me exploring new technologies, reading about design philosophy, or enjoying a quiet moment with a good cup of coffee."
+  image="/images/profile.jpg"
+/>
+
+<Section title="EXPERTISE">
+  <Grid cols={4}>
+    <Card>
+      <h3 className="font-bold mb-4">DESIGN</h3>
+      <ul className="space-y-2 text-sm text-muted-foreground">
+        <li>UI/UX Design</li>
+        <li>Visual Design</li>
+        <li>Branding</li>
+        <li>Prototyping</li>
+      </ul>
+    </Card>
+    <Card>
+      <h3 className="font-bold mb-4">DEVELOPMENT</h3>
+      <ul className="space-y-2 text-sm text-muted-foreground">
+        <li>React & TypeScript</li>
+        <li>Responsive Design</li>
+        <li>Performance Optimization</li>
+        <li>Accessibility</li>
+      </ul>
+    </Card>
+    <Card>
+      <h3 className="font-bold mb-4">STRATEGY</h3>
+      <ul className="space-y-2 text-sm text-muted-foreground">
+        <li>User Research</li>
+        <li>Information Architecture</li>
+        <li>Content Strategy</li>
+        <li>Digital Consulting</li>
+      </ul>
+    </Card>
+    <Card>
+      <h3 className="font-bold mb-4">TOOLS</h3>
+      <ul className="space-y-2 text-sm text-muted-foreground">
+        <li>Figma</li>
+        <li>Adobe Creative Suite</li>
+        <li>Git & GitHub</li>
+        <li>Modern Web Stack</li>
+      </ul>
+    </Card>
+  </Grid>
+</Section>
+
+<Section title="PHILOSOPHY">
+  <div className="mb-6">
+    <div className="text-muted-foreground">
+      I believe in the power of simplicity. In a world cluttered with noise, I strive to create digital spaces that are calm, focused, and purposeful. My work is guided by three core principles:
+    </div>
+  </div>
+  
+  <PhilosophyItem title="CLARITY">
+    Every element should have a clear purpose. If it doesn't serve the user, it doesn't belong.
+  </PhilosophyItem>
+
+  <PhilosophyItem title="FUNCTION">
+    Form follows function. Beautiful design is useless if it doesn't work seamlessly.
+  </PhilosophyItem>
+
+  <PhilosophyItem title="RESTRAINT">
+    Less is more. The best solutions often come from knowing what to leave out.
+  </PhilosophyItem>
+</Section>
+
+<Section>
+  <div className="text-center py-12 flex flex-col items-center gap-6">
+    <h2 className="text-3xl font-bold tracking-tight">LET'S COLLABORATE</h2>
+    <div className="text-muted-foreground max-w-xl">
+      I'm always interested in hearing about new projects and opportunities.
+    </div>
+    <a 
+      href="/contact" 
+      className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-[#4d9c0f] text-white hover:bg-[#4d9c0f]/90 h-11 px-8 py-2"
+    >
+      Get In Touch
+    </a>
+  </div>
+</Section>

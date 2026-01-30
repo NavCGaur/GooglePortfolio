@@ -1,0 +1,116 @@
+[
+  {
+    "title": "AI Content Generator",
+    "slug": "projects/ai-content-generator",
+    "date": "2025-07-20T00:00:00.000Z",
+    "cover": "/images/projects/placeholder.jpg",
+    "description": "AI-powered content generation platform with GPT-4 integration, custom templates, and collaborative editing features.",
+    "content": "const{Fragment:n,jsx:t,jsxs:e}=arguments[0];function _createMdxContent(r){const o={h1:\"h1\",p:\"p\",...r.components};return e(n,{children:[t(o.h1,{children:\"AI Content Generator\"}),\"\\n\",t(o.p,{children:\"Transform your content creation with AI-powered tools.\"})]})}return{default:function(n={}){const{wrapper:e}=n.components||{};return e?t(e,{...n,children:t(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "client": "ContentAI Labs",
+    "industry": "SaaS",
+    "liveUrl": "https://contentai-demo.com",
+    "repoUrl": "https://github.com/yourusername/ai-content-generator",
+    "techStack": [
+      "React",
+      "OpenAI GPT-4",
+      "Node.js",
+      "MongoDB",
+      "WebSocket"
+    ],
+    "images": [
+      "/images/projects/placeholder.jpg",
+      "/images/projects/placeholder.jpg",
+      "/images/projects/placeholder.jpg"
+    ],
+    "overview": "AI-powered content generation platform that helps marketers and writers create high-quality content using advanced language models and custom templates.",
+    "challenge": "Creating an intuitive interface for AI content generation while managing API costs, ensuring content quality, and enabling real-time collaboration.",
+    "solution": "Built React-based editor with real-time preview, implemented smart caching to reduce API calls, integrated WebSocket for collaborative editing, and created custom prompt templates.",
+    "results": "Platform generates 50,000+ pieces of content monthly, reduces content creation time by 70%, and maintains 95% user satisfaction rate."
+  },
+  {
+    "title": "Custom Real Estate CRM SaaS",
+    "slug": "projects/alpha-v1",
+    "date": "2025-09-18T00:00:00.000Z",
+    "cover": "/images/projects/placeholder.jpg",
+    "description": "Built CRM SaaS with Auth, RBAC, dashboards, Gmail API integration, Supabase backend, CI/CD pipeline, and GoDaddy domain deployment using Lovable AI.",
+    "content": "const{Fragment:n,jsx:t,jsxs:e}=arguments[0];function _createMdxContent(r){const c={h1:\"h1\",p:\"p\",...r.components};return e(n,{children:[t(c.h1,{children:\"Alpha Project\"}),\"\\n\",t(c.p,{children:\"This is a test.\"})]})}return{default:function(n={}){const{wrapper:e}=n.components||{};return e?t(e,{...n,children:t(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "client": "Closalty",
+    "industry": "Real Estate",
+    "liveUrl": "https://closalty.com",
+    "repoUrl": "https://github.com/yourusername/real-estate-crm",
+    "techStack": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "Gmail API",
+      "CI/CD",
+      "Lovable AI"
+    ],
+    "images": [
+      "/images/projects/placeholder.jpg",
+      "/images/projects/placeholder.jpg",
+      "/images/projects/placeholder.jpg"
+    ],
+    "overview": "Custom CRM SaaS for real estate deal and contact management. Transformed Lovable AI mockups into secure, scalable dashboards with full backend logic and frontend UI deployment.",
+    "challenge": "The client needed a production-ready CRM with multi-role dashboards (Superadmin, Admin, Agents, Assistants), secure authentication with RBAC, and seamless Gmail integration—all starting from AI-generated mockups that required complete backend implementation.",
+    "solution": "Integrated Supabase for authentication and role-based access control, rebuilt AI mockups into fully interactive dashboards with real-time data, implemented Gmail API for email management, and set up automated CI/CD deployment pipeline with custom domain configuration.",
+    "results": "Delivered a fully functional CRM with 4 distinct role-based dashboards, secure authentication system, automated deployment pipeline, and Gmail integration. Client successfully managing real estate deals and contacts with scalable infrastructure."
+  },
+  {
+    "title": "E-Commerce Platform",
+    "slug": "projects/ecommerce-platform",
+    "date": "2025-08-15T00:00:00.000Z",
+    "cover": "/images/projects/placeholder.jpg",
+    "description": "Full-stack e-commerce solution with payment integration, inventory management, and real-time analytics dashboard.",
+    "content": "const{Fragment:e,jsx:n,jsxs:t}=arguments[0];function _createMdxContent(r){const o={h1:\"h1\",p:\"p\",...r.components};return t(e,{children:[n(o.h1,{children:\"E-Commerce Platform\"}),\"\\n\",n(o.p,{children:\"A comprehensive e-commerce solution built for modern retail.\"})]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "client": "ShopFlow Inc",
+    "industry": "E-Commerce",
+    "liveUrl": "https://shopflow-demo.com",
+    "repoUrl": "https://github.com/yourusername/ecommerce-platform",
+    "techStack": [
+      "Next.js",
+      "Stripe",
+      "PostgreSQL",
+      "Redis",
+      "Tailwind CSS"
+    ],
+    "images": [
+      "/images/projects/placeholder.jpg",
+      "/images/projects/placeholder.jpg",
+      "/images/projects/placeholder.jpg"
+    ],
+    "overview": "Modern e-commerce platform with seamless checkout experience, real-time inventory tracking, and comprehensive admin dashboard for managing products and orders.",
+    "challenge": "Building a scalable e-commerce solution that handles high traffic, secure payment processing, and real-time inventory updates across multiple warehouses.",
+    "solution": "Implemented Next.js with server-side rendering for SEO, integrated Stripe for secure payments, used Redis for caching and session management, and PostgreSQL for reliable data storage.",
+    "results": "Launched platform handling 10,000+ daily transactions with 99.9% uptime, reduced checkout time by 40%, and increased conversion rate by 25%."
+  },
+  {
+    "title": "Project Management Tool",
+    "slug": "projects/project-management-tool",
+    "date": "2025-06-10T00:00:00.000Z",
+    "cover": "/images/projects/placeholder.jpg",
+    "description": "Collaborative project management platform with kanban boards, time tracking, and team analytics.",
+    "content": "const{Fragment:e,jsx:n,jsxs:t}=arguments[0];function _createMdxContent(r){const o={h1:\"h1\",p:\"p\",...r.components};return t(e,{children:[n(o.h1,{children:\"Project Management Tool\"}),\"\\n\",n(o.p,{children:\"Streamline your team's workflow with powerful project management.\"})]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "client": "TaskMaster Pro",
+    "industry": "Productivity",
+    "liveUrl": "https://taskmaster-demo.com",
+    "repoUrl": "https://github.com/yourusername/project-management",
+    "techStack": [
+      "Vue.js",
+      "Firebase",
+      "TypeScript",
+      "Chart.js",
+      "Tailwind CSS"
+    ],
+    "images": [
+      "/images/projects/placeholder.jpg",
+      "/images/projects/placeholder.jpg",
+      "/images/projects/placeholder.jpg"
+    ],
+    "overview": "Comprehensive project management platform with drag-and-drop kanban boards, time tracking, team collaboration tools, and advanced analytics.",
+    "challenge": "Building a real-time collaborative platform that scales to handle large teams while maintaining performance and providing insightful analytics.",
+    "solution": "Leveraged Firebase for real-time data sync, implemented Vue.js for reactive UI, created custom Chart.js visualizations, and optimized with lazy loading and caching.",
+    "results": "Platform supports 5,000+ active teams, processes 100,000+ tasks monthly, and improves team productivity by 35% according to user surveys."
+  }
+]

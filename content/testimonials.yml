@@ -1,0 +1,31 @@
+- name: "Sarah Chen"
+  role: "CTO"
+  company: "TechFlow"
+  quote: "The level of clarity and precision brought to our project was unmatched. A true partner in design."
+  rating: 5
+  featured: true
+  date: "Jan 2025"
+
+- name: "David Martinez"
+  role: "Founder"
+  company: "Solutech"
+  quote: "Functional, beautiful, and incredibly fast. The new site has completely transformed how we present our work."
+  rating: 5
+  featured: true
+  date: "Dec 2024"
+
+- name: "Emily Rodriguez"
+  role: "Product Manager"
+  company: "InnovateLabs"
+  quote: "Outstanding attention to detail and seamless execution. Our users love the new interface and it shows in our metrics."
+  rating: 5
+  featured: false
+  date: "Nov 2024"
+
+- name: "Michael Thompson"
+  role: "CEO"
+  company: "GrowthHub"
+  quote: "Delivered beyond expectations. The collaborative approach made the entire process smooth and the results speak for themselves."
+  rating: 5
+  featured: false
+  date: "Oct 2024"
