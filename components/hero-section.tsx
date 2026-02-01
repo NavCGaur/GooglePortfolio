@@ -25,7 +25,7 @@ export function HeroSection() {
 
 
                         {/* Animated Stats */}
-                        <AnimatedStats stats={siteConfig.stats} />
+                        <AnimatedStats stats={siteConfig.stats.map(s => `${s.value} ${s.label}`)} />
 
                         {/* CTA Button */}
                         <div>

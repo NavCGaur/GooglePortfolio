@@ -26,6 +26,9 @@ export function ProjectModalRightPanel({ project }: RightPanelProps) {
                                     alt={`${project.title} screenshot ${index + 1}`}
                                     fill
                                     className="object-cover"
+                                    priority={index === 0}
+                                    sizes="(max-width: 1024px) 100vw, 800px"
+                                    unoptimized
                                 />
                             </div>
                         ))}

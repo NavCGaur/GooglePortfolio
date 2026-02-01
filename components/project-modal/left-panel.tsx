@@ -9,12 +9,9 @@ interface LeftPanelProps {
 
 export function ProjectModalLeftPanel({ project, onClose }: LeftPanelProps) {
     return (
-        <div className="w-full lg:w-[400px] lg:sticky lg:top-0 lg:h-screen overflow-y-auto p-8 lg:p-12 space-y-8">
-            {/* Header */}
-            <div className="space-y-4">
-                <h1 className="text-3xl lg:text-4xl font-bold tracking-tight">
-                    {project.title}
-                </h1>
+        <div className="w-full lg:w-[400px] flex-1 lg:flex-none lg:h-full overflow-y-auto p-8 lg:p-12 space-y-8">
+            {/* Client & Metadata */}
+            <div className="space-y-4 pt-4">
 
                 {project.client && (
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -27,6 +24,12 @@ export function ProjectModalLeftPanel({ project, onClose }: LeftPanelProps) {
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                         <span className="font-medium">Industry:</span>
                         <span>{project.industry}</span>
+                    </div>
+                )}
+                {project.role && (
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <span className="font-medium">My Role:</span>
+                        <span>{project.role}</span>
                     </div>
                 )}
             </div>
@@ -95,7 +98,7 @@ export function ProjectModalLeftPanel({ project, onClose }: LeftPanelProps) {
                         href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold bg-[#c2f04c] text-black rounded-md hover:bg-[#a8d63f] transition-colors"
+                        className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold bg-[#4d9c0f] text-white rounded-md hover:bg-[#3d7c0a] transition-colors cursor-pointer"
                     >
                         View Live Site
                         <svg
@@ -119,7 +122,7 @@ export function ProjectModalLeftPanel({ project, onClose }: LeftPanelProps) {
                         href={project.repoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold border border-border bg-card text-foreground rounded-md hover:bg-accent transition-colors"
+                        className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold border border-border bg-card text-foreground rounded-md hover:bg-accent transition-colors cursor-pointer"
                     >
                         View Code
                         <svg

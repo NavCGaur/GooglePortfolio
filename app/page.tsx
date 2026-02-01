@@ -2,7 +2,10 @@
 
 import { useEffect } from "react"
 import { Navbar } from "@/components/navbar"
+import { NavbarNew } from "@/components/navbar-new"
 import { HeroSection } from "@/components/hero-section"
+import { HeroSectionNew } from "@/components/hero-section-new"
+import { ServicesSection } from "@/components/services-section"
 import { TrustSection } from "@/components/trust-section"
 import { ProjectsGallery } from "@/components/projects-gallery"
 import { TestimonialsSection } from "@/components/testimonials-section"
@@ -30,8 +33,11 @@ function HomeContent() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
-      <HeroSection />
+      {/* <Navbar /> */}
+      <NavbarNew />
+      {/* <HeroSection /> */}
+      <HeroSectionNew />
+      <ServicesSection />
       <TrustSection />
       <ProjectsGallery />
       <TestimonialsSection testimonials={testimonials} />

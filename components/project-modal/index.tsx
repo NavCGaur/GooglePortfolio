@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { Project } from "@/hooks/use-project-modal"
 import { ProjectModalLeftPanel } from "./left-panel"
 import { ProjectModalRightPanel } from "./right-panel"
@@ -14,6 +14,8 @@ interface ProjectModalProps {
 export function ProjectModal({ isOpen, project, onClose }: ProjectModalProps) {
     if (!isOpen || !project) return null
 
+    const [isCopied, setIsCopied] = useState(false)
+
     const handleBackdropClick = (e: React.MouseEvent) => {
         if (e.target === e.currentTarget) {
             onClose()
@@ -23,7 +25,8 @@ export function ProjectModal({ isOpen, project, onClose }: ProjectModalProps) {
     const handleCopyLink = () => {
         const url = window.location.href
         navigator.clipboard.writeText(url)
-        // You could add a toast notification here
+        setIsCopied(true)
+        setTimeout(() => setIsCopied(false), 2000)
     }
 
     return (
@@ -32,17 +35,59 @@ export function ProjectModal({ isOpen, project, onClose }: ProjectModalProps) {
             onClick={handleBackdropClick}
         >
             {/* Modal Container */}
-            <div className="relative w-full h-full max-w-[1400px] max-h-[90vh] m-4 bg-background rounded-lg shadow-2xl overflow-hidden animate-in slide-in-from-right duration-300">
+            <div className="relative w-full h-full max-w-[1400px] max-h-[90vh] m-4 bg-background rounded-lg shadow-2xl overflow-hidden animate-in slide-in-from-right duration-300 flex flex-col">
                 {/* Header */}
-                <div className="absolute top-0 left-0 right-0 z-10 flex items-center justify-between px-6 py-4 bg-background/95 backdrop-blur-sm border-b border-border">
-                    <div className="flex items-center gap-2">
+                <div className="flex-none flex items-center justify-between px-8 py-5 bg-background border-b border-border">
+                    <div className="flex-1 min-w-0">
+                        <h2 className="text-xl md:text-2xl font-semibold text-foreground truncate">
+                            {project.title}
+                        </h2>
+                    </div>
+
+                    <div className="flex items-center gap-6 ml-4">
+                        <button
+                            onClick={handleCopyLink}
+                            className="flex items-center gap-2 text-sm font-medium text-[#16a34a] hover:text-[#15803d] transition-colors whitespace-nowrap cursor-pointer"
+                        >
+                            {isCopied ? "Link copied!" : "Copy link"}
+                            {isCopied ? (
+                                <svg
+                                    className="w-5 h-5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={1.5}
+                                        d="M5 13l4 4L19 7"
+                                    />
+                                </svg>
+                            ) : (
+                                <svg
+                                    className="w-5 h-5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={1.5}
+                                        d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                                    />
+                                </svg>
+                            )}
+                        </button>
+
                         <button
                             onClick={onClose}
-                            className="p-2 rounded-md hover:bg-accent transition-colors"
+                            className="text-[#16a34a] hover:text-[#15803d] transition-colors cursor-pointer"
                             aria-label="Close modal"
                         >
                             <svg
-                                className="w-5 h-5"
+                                className="w-6 h-6"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -50,37 +95,17 @@ export function ProjectModal({ isOpen, project, onClose }: ProjectModalProps) {
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
-                                    strokeWidth={2}
+                                    strokeWidth={1.5}
                                     d="M6 18L18 6M6 6l12 12"
                                 />
                             </svg>
                         </button>
                     </div>
-
-                    <button
-                        onClick={handleCopyLink}
-                        className="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md hover:bg-accent transition-colors"
-                    >
-                        <svg
-                            className="w-4 h-4"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
-                            />
-                        </svg>
-                        Copy Link
-                    </button>
                 </div>
 
                 {/* Split View Content */}
-                <div className="flex flex-col lg:flex-row h-full pt-16">
-                    {/* Left Panel - Sticky */}
+                <div className="flex-1 flex flex-col lg:flex-row min-h-0">
+                    {/* Left Panel - Scrollable */}
                     <ProjectModalLeftPanel project={project} onClose={onClose} />
 
                     {/* Divider */}

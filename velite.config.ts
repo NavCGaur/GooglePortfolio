@@ -17,6 +17,7 @@ const projects = defineCollection({
     industry: s.string().optional(),
     liveUrl: s.string().optional(),
     repoUrl: s.string().optional(),
+    role: s.string().optional(),
 
     // Technical Information
     techStack: s.array(s.string()).default([]),

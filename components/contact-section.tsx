@@ -75,20 +75,20 @@ export function ContactSection() {
     }
 
     return (
-        <section className="w-full px-4 py-12 md:py-16 min-h-screen flex items-center">
+        <section id="contact" className="w-full px-4 py-12 md:py-16 min-h-screen flex items-center">
             <div className="max-w-7xl mx-auto w-full">
-                {/* Section Title */}
-                <div className="mb-8">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-3">CONTACT</h2>
-                    <p className="text-muted-foreground max-w-xl">
-                        Have a project in mind? Let's discuss how we can work together to bring your vision to life.
-                    </p>
-                </div>
-
                 {/* Two Column Layout */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                     {/* Left Section - Contact Form */}
                     <div className="w-full">
+                        {/* Section Title */}
+                        <div className="mb-8">
+                            <h2 className="text-4xl md:text-5xl font-bold mb-3">CONTACT</h2>
+                            <p className="text-muted-foreground max-w-xl">
+                                Have a project in mind? Let's discuss how we can work together to bring your vision to life.
+                            </p>
+                        </div>
+
                         {/* Status Messages */}
                         {submitStatus.type && (
                             <div
@@ -178,14 +178,14 @@ export function ContactSection() {
                     </div>
 
                     {/* Right Section - What to Expect & Get in Touch */}
-                    <div className="w-full space-y-4">
+                    <div className="w-full flex flex-col gap-4 h-full">
                         {/* What to Expect */}
-                        <div className="bg-muted/30 rounded-lg p-5 lg:p-6">
-                            <h3 className="text-xl font-semibold mb-3">WHAT TO EXPECT</h3>
-                            <ul className="space-y-2 text-muted-foreground">
+                        <div className="bg-muted/30 rounded-none p-5 lg:p-8 flex-1 flex flex-col justify-center">
+                            <h3 className="text-2xl font-bold mb-4">WHAT TO EXPECT</h3>
+                            <ul className="space-y-3 text-muted-foreground text-lg font-medium">
                                 {siteConfig.contact.whatToExpect.map((item, index) => (
                                     <li key={index} className="flex items-start">
-                                        <span className="mr-2">•</span>
+                                        <span className="mr-3">•</span>
                                         <span>{item}</span>
                                     </li>
                                 ))}
@@ -193,26 +193,26 @@ export function ContactSection() {
                         </div>
 
                         {/* Get in Touch */}
-                        <div className="bg-muted/30 rounded-lg p-5 lg:p-6">
-                            <h3 className="text-xl font-semibold mb-3">GET IN TOUCH</h3>
+                        <div className="bg-muted/30 rounded-none p-5 lg:p-8 flex-1 flex flex-col justify-center">
+                            <h3 className="text-2xl font-bold mb-4">GET IN TOUCH</h3>
 
-                            <div className="space-y-3">
+                            <div className="space-y-6">
                                 {/* Email */}
                                 <div>
-                                    <p className="text-xs font-medium text-muted-foreground mb-1">EMAIL</p>
-                                    <p className="text-foreground">{siteConfig.contact.email}</p>
+                                    <p className="text-sm font-semibold text-muted-foreground mb-1 tracking-wide">EMAIL</p>
+                                    <p className="text-foreground text-xl font-medium">{siteConfig.contact.email}</p>
                                 </div>
 
                                 {/* Availability */}
                                 <div>
-                                    <p className="text-xs font-medium text-muted-foreground mb-1">AVAILABILITY</p>
-                                    <p className="text-foreground">{siteConfig.contact.availability}</p>
+                                    <p className="text-sm font-semibold text-muted-foreground mb-1 tracking-wide">AVAILABILITY</p>
+                                    <p className="text-foreground text-lg font-medium">{siteConfig.contact.availability}</p>
                                 </div>
 
                                 {/* Response Time */}
                                 <div>
-                                    <p className="text-xs font-medium text-muted-foreground mb-1">RESPONSE TIME</p>
-                                    <p className="text-foreground">{siteConfig.contact.responseTime}</p>
+                                    <p className="text-sm font-semibold text-muted-foreground mb-1 tracking-wide">RESPONSE TIME</p>
+                                    <p className="text-foreground text-lg font-medium">{siteConfig.contact.responseTime}</p>
                                 </div>
                             </div>
                         </div>

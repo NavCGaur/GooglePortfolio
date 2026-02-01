@@ -36,7 +36,7 @@ export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) 
     const visibleTestimonials = testimonials.slice(currentIndex, currentIndex + itemsPerPage)
 
     return (
-        <section className="w-full px-4 py-20 bg-background overflow-hidden">
+        <section id="testimonials" className="w-full px-4 py-5 bg-background overflow-hidden">
             <div className="max-w-7xl mx-auto w-full">
                 {/* Section Title */}
                 <div className="mb-16">
@@ -99,6 +99,8 @@ export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) 
                         <ChevronRight className="w-6 h-6 text-foreground/60" />
                     </button>
                 </div>
+
+                <div className="w-full h-px bg-black/10 mt-20" />
             </div>
         </section>
     )

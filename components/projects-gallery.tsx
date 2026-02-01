@@ -53,24 +53,22 @@ export function ProjectsGallery({ onProjectClick }: ProjectsGalleryProps) {
     }
 
     return (
-        <section className="w-full py-16 px-6 md:px-12">
+        <section id="projects" className="w-full py-24 px-6 md:px-12 bg-[#FBFBF9]">
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
-                <div className="flex items-end justify-between mb-10">
+                <div className="flex items-end justify-between mb-20">
                     <div className="space-y-2">
-                        <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+                        <h2 className="text-4xl md:text-5xl ">
                             Featured Work
                         </h2>
-                        <p className="text-muted-foreground text-lg">
-                            Explore my latest projects and technical solutions
-                        </p>
+
                     </div>
 
                     {/* Navigation Arrows */}
                     <div className="hidden md:flex gap-2">
                         <button
                             onClick={() => scroll("left")}
-                            className="w-12 h-12 rounded-full border border-border bg-card hover:bg-accent hover:border-foreground/20 transition-all duration-200 flex items-center justify-center group"
+                            className="w-12 h-12 rounded-full border border-border bg-card hover:bg-accent hover:border-foreground/20 transition-all duration-200 flex items-center justify-center group cursor-pointer"
                             aria-label="Scroll left"
                         >
                             <svg
@@ -91,7 +89,7 @@ export function ProjectsGallery({ onProjectClick }: ProjectsGalleryProps) {
                         </button>
                         <button
                             onClick={() => scroll("right")}
-                            className="w-12 h-12 rounded-full border border-border bg-card hover:bg-accent hover:border-foreground/20 transition-all duration-200 flex items-center justify-center group"
+                            className="w-12 h-12 rounded-full border border-border bg-card hover:bg-accent hover:border-foreground/20 transition-all duration-200 flex items-center justify-center group cursor-pointer"
                             aria-label="Scroll right"
                         >
                             <svg
@@ -124,36 +122,27 @@ export function ProjectsGallery({ onProjectClick }: ProjectsGalleryProps) {
                             msOverflowStyle: "none"
                         }}
                     >
-                        {projects.map((project) => (
-                            <div
-                                key={project.slug}
-                                className="flex-shrink-0 w-[85vw] sm:w-[400px] md:w-[450px]"
-                            >
-                                <ProjectCard
-                                    title={project.title}
-                                    cover={project.cover}
-                                    slug={project.slug}
-                                    description={project.description}
-                                    techStack={project.techStack}
-                                    onClick={handleProjectClick}
-                                />
-                            </div>
-                        ))}
+                        {[...projects]
+                            .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+                            .map((project) => (
+                                <div
+                                    key={project.slug}
+                                    className="flex-shrink-0 w-[85vw] sm:w-[400px] md:w-[450px]"
+                                >
+                                    <ProjectCard
+                                        title={project.title}
+                                        cover={project.cover}
+                                        slug={project.slug}
+                                        description={project.description}
+                                        techStack={project.techStack}
+                                        onClick={handleProjectClick}
+                                    />
+                                </div>
+                            ))}
                     </div>
                 </div>
 
-                {/* View All Link */}
-                <div className="mt-10 flex justify-center">
-                    <a
-                        href="/projects"
-                        className="inline-flex items-center gap-2 text-base text-foreground hover:text-foreground/80 transition-colors group"
-                    >
-                        <span className="font-medium">View All Projects</span>
-                        <span className="inline-block transition-all duration-250 ease-out group-hover:translate-x-1.5 group-hover:scale-110">
-                            →
-                        </span>
-                    </a>
-                </div>
+                <div className="w-full h-px bg-black/10 mt-20" />
             </div>
 
             <style jsx>{`

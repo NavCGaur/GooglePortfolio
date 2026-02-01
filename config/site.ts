@@ -7,14 +7,28 @@ export const siteConfig = {
         status: true,
         message: "Available for Work"
     },
+    hero: {
+        headline: {
+            prefix: "Web",
+            highlight1: "Solutions",
+            middle: "That Actually",
+            highlight2: "Grow",
+            suffix: "Your Business"
+        },
+        description: "Strategic web design and development that drives real results. We build digital experiences that convert visitors into customers and scale with your business."
+    },
     stats: [
-        "5+ years experience",
-        "40+ projects delivered",
-        "100% client satisfaction"
+        { value: "5+", label: "Years Experience" },
+        { value: "50+", label: "Projects Shipped" },
+        { value: "30+", label: "Clients Served" }
     ],
     cta: {
         primary: "Book Free Consultation",
-        primaryHref: "/contact"
+        primaryHref: "/#contact",
+        secondary: "See Our Work",
+        secondaryHref: "/#projects",
+        tertiary: "Let's Talk",
+        tertiaryHref: "/#contact"
     },
     socials: {
         github: "https://github.com",
@@ -37,38 +51,60 @@ export const siteConfig = {
             "Collaborative design and development process",
             "Ongoing support and maintenance options"
         ]
-    }
+    },
+    services: [
+        {
+            id: 's1',
+            number: '01',
+            title: 'WEB DESIGN',
+            description: 'Creating intuitive and aesthetically refined interfaces that prioritize user experience and brand identity. I focus on clean lines, clear hierarchy, and purposeful interaction.',
+        },
+        {
+            id: 's2',
+            number: '02',
+            title: 'DEVELOPMENT',
+            description: 'Building responsive, performant websites using modern technologies and best practices. From React to Tailwind, the code is as clean as the design.',
+        },
+        {
+            id: 's3',
+            number: '03',
+            title: 'CONSULTING',
+            description: 'Providing strategic guidance on digital products, user experience, and technical architecture. Helping brands navigate the digital landscape with clarity.',
+        }
+    ]
 }
 
 export const navigation = {
     main: [
-        { name: "About", href: "/about" }
+        { name: "Home", href: "/" },
+        { name: "Projects", href: "/#projects" },
+        { name: "Testimonials", href: "/#testimonials" }
     ],
     projects: {
         featured: [
             {
-                id: "real-estate-saas",
-                name: "Real Estate SAAS",
-                tech: "NEXT.JS",
-                slug: "/projects/real-estate-saas"
-            },
-            {
-                id: "political-blog",
-                name: "Political Blog",
+                id: "ghost-cms-management",
+                name: "Ghost CMS Management",
                 tech: "Ghost CMS",
-                slug: "/projects/political-blog"
+                slug: "/projects/ghost-cms-management"
             },
             {
-                id: "aesthetic-site",
-                name: "Aesthetic Site",
-                tech: "Wordpress",
-                slug: "/projects/aesthetic-site"
+                id: "real-estate-crm",
+                name: "Real Estate CRM SaaS",
+                tech: "Next.js & Supabase",
+                slug: "/projects/real-estate-crm"
             },
             {
-                id: "accountancy-app",
-                name: "Accountancy App",
-                tech: "React",
-                slug: "/projects/accountancy-app"
+                id: "moda-wellness",
+                name: "Moda Wellness",
+                tech: "Wordpress & SEO",
+                slug: "/projects/moda-wellness"
+            },
+            {
+                id: "neurolingva",
+                name: "Neurolingva",
+                tech: "AI & Next.js",
+                slug: "/projects/neurolingva"
             }
         ],
         viewAllText: "View All Projects",

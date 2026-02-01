@@ -13,6 +13,7 @@ export interface Project {
     industry?: string
     liveUrl?: string
     repoUrl?: string
+    role?: string
     techStack: string[]
     images: string[]
     overview?: string

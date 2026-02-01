@@ -17,6 +17,7 @@ export function Navbar() {
                             fill
                             className="object-cover"
                             priority
+                            sizes="56px"
                         />
                     </div>
 
