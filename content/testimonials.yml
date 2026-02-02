@@ -1,31 +1,31 @@
-- name: "Sarah Chen"
+- name: "David H."
   role: "CTO"
-  company: "TechFlow"
-  quote: "The level of clarity and precision brought to our project was unmatched. A true partner in design."
+  company: "ModaWellness"
+  quote: "The level of clarity and precision brought to our project was unmatched."
   rating: 5
   featured: true
-  date: "Jan 2025"
+  date: "Jan 2026"
 
-- name: "David Martinez"
+- name: "Brenn Coyle"
   role: "Founder"
-  company: "Solutech"
+  company: "B.Coyle"
   quote: "Functional, beautiful, and incredibly fast. The new site has completely transformed how we present our work."
   rating: 5
   featured: true
-  date: "Dec 2024"
-
-- name: "Emily Rodriguez"
-  role: "Product Manager"
-  company: "InnovateLabs"
-  quote: "Outstanding attention to detail and seamless execution. Our users love the new interface and it shows in our metrics."
-  rating: 5
-  featured: false
-  date: "Nov 2024"
+  date: "Dec 2025"
 
 - name: "Michael Thompson"
   role: "CEO"
-  company: "GrowthHub"
+  company: "theSinic"
   quote: "Delivered beyond expectations. The collaborative approach made the entire process smooth and the results speak for themselves."
   rating: 5
   featured: false
-  date: "Oct 2024"
+  date: "Nov 2025"
+
+- name: "Anita Desai"
+  role: "Managing Partner"
+  company: "MDAssociates"
+  quote: "Strategic, reliable, and detail‑oriented. The technical architecture and performance improvements gave us confidence to scale further."
+  rating: 5
+  featured: false
+  date: "Oct 2025"

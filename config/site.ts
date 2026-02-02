@@ -56,20 +56,20 @@ export const siteConfig = {
         {
             id: 's1',
             number: '01',
-            title: 'WEB DESIGN',
-            description: 'Creating intuitive and aesthetically refined interfaces that prioritize user experience and brand identity. I focus on clean lines, clear hierarchy, and purposeful interaction.',
+            title: 'Full‑Stack Development',
+            description: 'Building responsive, performant applications using modern technologies such as Next.js, React, Node.js, and MongoDB. I focus on clean architecture, modular code, and automated workflows (GitHub Actions, Docker, Cloud Run) so projects scale smoothly and stay maintainable.',
         },
         {
             id: 's2',
             number: '02',
-            title: 'DEVELOPMENT',
-            description: 'Building responsive, performant websites using modern technologies and best practices. From React to Tailwind, the code is as clean as the design.',
+            title: 'WordPress & CMS Solutions',
+            description: 'Designing fast, SEO‑friendly, and secure WordPress sites with custom themes, plugins, and WooCommerce integrations. I specialize in performance optimization (Core Web Vitals, 90+ PageSpeed scores) and CMS setups that make content management effortless.',
         },
         {
             id: 's3',
             number: '03',
-            title: 'CONSULTING',
-            description: 'Providing strategic guidance on digital products, user experience, and technical architecture. Helping brands navigate the digital landscape with clarity.',
+            title: 'Technical SEO & Performance Optimization',
+            description: 'Combining deep SEO expertise with full‑stack development skills, I don’t just audit — I implement fixes myself. From Core Web Vitals optimization and schema markup to mobile‑first improvements and server tuning, I ensure sites rank higher and load faster.',
         }
     ]
 }
