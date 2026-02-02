@@ -15,7 +15,7 @@ export const siteConfig = {
             highlight2: "Grow",
             suffix: "Your Business"
         },
-        description: "Strategic web design and development that drives real results. We build digital experiences that convert visitors into customers and scale with your business."
+        description: "Full-Stack Developer helping founders and small businesses build, fix and grow their websites."
     },
     stats: [
         { value: "5+", label: "Years Experience" },

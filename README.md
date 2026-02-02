@@ -136,6 +136,3 @@ Licensed under the(LICENSE). Feel free to "riff" and build your own.
 
 ---
 
-### 💡 Recruiter Tip
-
-*This site achieves a performance score of 95+ and uses the latest Next.js 16.1 features, including asynchronous request APIs and React 19 Server Components. Explore the `velite.config.ts` to see the type-safe schema enforcement in action.*
